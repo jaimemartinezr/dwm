@@ -28,7 +28,12 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "firefox-esr",  NULL,       NULL,       0,       1,           -1 },
+	{ "steam",  NULL,       NULL,       0,       1,           -1 },
+	{ "heroic",  NULL,       NULL,       0,       1,           -1 },
+	{ "steam_app_0",  NULL,       NULL,       0,       1,           -1 },
+	{ "Godot",  NULL,       NULL,       0,       1,           -1 },
+	{ "Godot_Engine",  NULL,       NULL,       0,       1,           -1 },
 };
 
 /* layout(s) */
@@ -45,7 +50,7 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod1Mask
+#define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
